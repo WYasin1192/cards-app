@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.font-heading {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+}
+
+.Main-card-boarder{
+  border-radius: 10px;
+  padding: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Main-card-header{
+  background-color: #FAF5F1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.Main-card-heading{
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Main-text-paragraph{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Main-input{
+  border: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline-width: 0;
+  line-height: 24px;
+  padding-left: 18px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.Main-check-button{
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Card-item-trash-button{
+  border: none;
+  background-color: #00000000;
+  align-self: flex-start;
+  
+}
+
+.Card-item-text{
+  flex: 1;
+  justify-content: center;
+  line-height: 30px; 
+}
+
+.Main-error-text{
+  color: #FF4D00;
+  margin-top: 20px;
+  font-weight: 700;
+}
