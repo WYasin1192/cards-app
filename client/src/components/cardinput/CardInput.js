@@ -37,9 +37,10 @@ class CardInput extends React.Component {
       
         render() {
             return (
-                <div >
+                <div class="Card-input-container" >
                     
-                    <input class="Main-input font-text" placeholder='xxxx xxxx xxxx xxxx' pattern="[0-9\s]*" onChange={this.handlingCardNumber.bind(this)} 
+                    <input class={(this.props.showError ?'Card-input-view font-text Card-input-error': 'Card-input-view font-text Card-input-normal' )} 
+                      placeholder='xxxx xxxx xxxx xxxx' pattern="[0-9\s]*" onChange={this.handlingCardNumber.bind(this)} 
                         value={this.formateCardNumeber(this.state.cardNumber)} />
 
                 </div>

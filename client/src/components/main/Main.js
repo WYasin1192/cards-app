@@ -14,7 +14,6 @@ class Main extends React.Component {
       }
       
       handleCheckClick(that){
-        console.log('test', this.inputRef.current.getinput())
         let inputNumber = this.inputRef.current.getinput()
         if(inputNumber.length !== 16){
           this.setState({showError:true})
@@ -42,7 +41,7 @@ class Main extends React.Component {
           let {showError} = this.state
             return (
                 <div data-testid="tst-main-component" className="row mt-5">
-                   <div class="card border border-dark Main-card-boarder" >
+                   <div class="Main-card-boarder" >
                     <div class="Main-card-header">
                         <div class="d-flex flex-row justify-content-between Main-card-heading">
                         <h3 class="font-heading">Balance checker</h3>
@@ -51,7 +50,7 @@ class Main extends React.Component {
                         <p class="Main-text-paragraph font-text">Enter your card number to check it’s balanace.</p>
                     </div>
                 
-                    <CardInput ref={this.inputRef}/>
+                    <CardInput ref={this.inputRef} showError={showError}/>
                     </div>
 
                     {showError ?<p class= "font-text Main-error-text text-center">Invalid number</p>:''}

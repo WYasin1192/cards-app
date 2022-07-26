@@ -18,7 +18,6 @@ class CardList extends React.Component {
 
 
   getCardsItems = async () => {
-    console.log('1')
       try {
           const response = await axios.get('http://localhost:5001/api/card');
           if (response.status === 200 & response.data.data.length > 0) {
@@ -46,8 +45,7 @@ class CardList extends React.Component {
 
   getItems() {
     let  itemList=this.state.cards.map((item,index)=>{
-      console.log('map key', index);
-      return <CardListItem key={index} item={item} onDelete={this.deleteCard.bind(this)}/>
+      return <CardListItem key={item.id} index={index} item={item} onDelete={this.deleteCard.bind(this)}/>
     })
     return itemList
   }
